@@ -57,7 +57,7 @@ python3 -m http.server 8080 --bind 0.0.0.0
 │   └── latest.json           خروجی GitHub Actions (اختیاری)
 ├── tools/update-prices.js    اسکریپت به‌روزرسانی خودکار نرخ‌ها
 ├── tests/                    تست‌های Node (۷۸ آزمون)
-└── .github/workflows/        CI و زمان‌بندی به‌روزرسانی نرخ‌ها
+└── ci/update-prices.yml      ورک‌فلوی آماده (باید به .github/workflows/ کپی شود)
 ```
 
 ---
@@ -91,12 +91,33 @@ python3 -m http.server 8080 --bind 0.0.0.0
 بنابراین حتی اگر مرورگر کاربر به دلیل **CORS** نتواند مستقیم به سرویس وصل شود،
 نرخ‌ها تازه می‌مانند.
 
+فایل ورک‌فلو به دلیل محدودیت دسترسی ربات (نداشتن مجوز `workflows`) در پوشهٔ `ci/`
+قرار گرفته است. برای فعال‌سازی، یک بار آن را به مسیر اصلی منتقل کنید:
+
+**راه ساده (از مرورگر):**
+1. در GitHub فایل `ci/update-prices.yml` را باز کنید و محتوایش را کپی کنید.
+2. `Add file → Create new file` و نام `.github/workflows/update-prices.yml` را بزنید.
+3. محتوا را پیست و روی `Commit changes` بزنید.
+
+**یا از طریق ترمینال:**
+```bash
+git clone https://github.com/mohammadporaee92-stack/site-dollar_talla_gold_vip.git
+cd site-dollar_talla_gold_vip
+mkdir -p .github/workflows
+git mv ci/update-prices.yml .github/workflows/update-prices.yml
+git commit -m "ci: فعال‌سازی به‌روزرسانی خودکار نرخ‌ها"
+git push
+```
+
+سپس:
 1. کلید رایگان را از لینک بالا بگیرید.
 2. در GitHub: `Settings → Secrets and variables → Actions → New repository secret`
    با نام **`BRSAPI_KEY`**.
 3. ورک‌فلو را یک بار دستی اجرا کنید: `Actions → CI و به‌روزرسانی نرخ‌ها → Run workflow`.
 
 > ورک‌فلوها فقط روی **برنچ پیش‌فرض** زمان‌بندی می‌شوند؛ پس ابتدا PR را merge کنید.
+> تا زمانی که ورک‌فلو فعال نشود هم سایت کار می‌کند و از `data/prices.json` یا
+> کلید واردشده در مرورگر استفاده می‌کند.
 
 ### افزودن منبع دیگر
 
