@@ -30,7 +30,7 @@ window.DG_CONFIG = {
       label: "BrsApi (طلا، ارز، رمزارز)",
       // نسخه Pro — با key شما. بخش‌های لازم را با section محدود کرده‌ایم تا سبک باشد.
       url: "https://api.brsapi.ir/Market/Gold_Currency_Pro.php?key={KEY}&section=gold,currency",
-      apiKey: "", // ← کلید خود را اینجا بگذارید (یا از پنل تنظیمات سایت)
+      apiKey: "BHUmHszYCPbvXt6eRDwdmjPa2Za7emDN", // ← کلید خود را اینجا بگذارید (یا از پنل تنظیمات سایت)
       format: "brsapi",
       enabled: true,
     },
