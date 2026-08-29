@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-label="طلا و ارز VIP — نرخ لحظه‌ای دلار، طلا و سکه">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0a0e16"/>
+      <stop offset="1" stop-color="#101725"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#f7e6b8"/>
+      <stop offset="0.55" stop-color="#d6b266"/>
+      <stop offset="1" stop-color="#8f6f2c"/>
+    </linearGradient>
+    <linearGradient id="fade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#d6b266" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#d6b266" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <g stroke="#ffffff" stroke-opacity="0.035">
+    <path d="M0 100h1200M0 210h1200M0 320h1200M0 430h1200M0 540h1200"/>
+    <path d="M150 0v630M300 0v630M450 0v630M600 0v630M750 0v630M900 0v630M1050 0v630"/>
+  </g>
+  <circle cx="1040" cy="90" r="240" fill="#d6b266" fill-opacity="0.08"/>
+
+  <!-- نمودار -->
+  <path d="M90 470 L240 430 L390 452 L540 388 L690 410 L840 330 L990 352 L1120 268 L1120 560 L90 560 Z" fill="url(#fade)"/>
+  <path d="M90 470 L240 430 L390 452 L540 388 L690 410 L840 330 L990 352 L1120 268" fill="none" stroke="url(#gold)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="1120" cy="268" r="12" fill="#f7e6b8"/>
+
+  <!-- نشان -->
+  <g transform="translate(96 96)">
+    <rect width="76" height="76" rx="22" fill="url(#gold)"/>
+    <g fill="none" stroke="#171208" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M38 20 20 30l18 10 18-10-18-10Z"/>
+      <path d="M20 40l18 10 18-10"/>
+      <path d="M20 50l18 10 18-10"/>
+    </g>
+  </g>
+
+  <text x="96" y="272" font-family="Vazirmatn, Tahoma, sans-serif" font-size="86" font-weight="800" fill="url(#gold)" direction="rtl">طلا و ارز VIP</text>
+  <text x="96" y="336" font-family="Vazirmatn, Tahoma, sans-serif" font-size="38" fill="#cbd2dd" direction="rtl">نرخ لحظه‌ای دلار، طلا و سکه در یک نگاه</text>
+  <text x="96" y="386" font-family="Vazirmatn, Tahoma, sans-serif" font-size="26" fill="#8b93a3">Dollar · Talla · Gold VIP — live rates &amp; calculators</text>
+</svg>
