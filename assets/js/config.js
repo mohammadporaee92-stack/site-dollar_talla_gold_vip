@@ -9,10 +9,10 @@ window.DG_CONFIG = {
     nameEn: "Dollar · Talla · Gold VIP",
     tagline: "مرجع لحظه‌ای نرخ دلار، طلا و سکه",
     phone: "۰۲۱-۹۱۰۰۰۰۰۰",
-    phoneHref: "tel:+982191000000",
-    whatsapp: "989120000000", // بدون + و بدون صفر ابتدایی
-    email: "info@example.com",
-    address: "تهران، خیابان فردوسی، مجتمع ارزی، طبقه دوم",
+    phoneHref: "tel:+989011316794",
+    whatsapp: "9899011316794", // بدون + و بدون صفر ابتدایی
+    email: "mporaee@gmail.com",
+    address: "تهران، خیابان طالقانی ",
     workHours: "شنبه تا چهارشنبه ۹:۰۰ تا ۱۸:۰۰ — پنجشنبه ۹:۰۰ تا ۱۳:۰۰",
   },
 
